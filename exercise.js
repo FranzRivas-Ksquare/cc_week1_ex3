@@ -16,15 +16,9 @@ const youShallNotPass = (arr) => {
     /* Only make changes below this comment */
     const youShallPass = [];
     for(i in arr) {
-        if (typeof (arr[i]) === 'number') {
-            if (arr[i] > 0) {
+        if (arr[i]) {
             youShallPass.push(arr[i]);
-            };  
-        } else if (typeof (arr[i]) === 'string') {
-            if (arr[i] != "") {
-            youShallPass.push(arr[i]);
-            }
-        }
+        };
     };
     return youShallPass;
   /* Only make changes below this comment */
